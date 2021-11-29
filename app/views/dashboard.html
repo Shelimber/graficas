@@ -1,0 +1,93 @@
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" >
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3 id="total_compras">$1,000</h3>
+                        <p>Ventas del mes</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="javascript:voidd(0)" class="small-box-footer" onclick="llanar_detalle()">
+                        Mas informacion <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="small-box bg-primary">
+                    <div class="inner">
+                        <h3 id="total_compras2">$4,315</h3>
+                        <p>Ventas del trimestre</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="javascript:voidd(0)" class="small-box-footer" onclick="llanar_detalle()">
+                        Mas informacion <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" >
+                <div class="small-box bg-success">
+                    <div class="inner">
+                        <h3 id="total_compras3">$8,025</h3>
+                        <p>Ventas del semestre</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="javascript:voidd(0)" class="small-box-footer" onclick="llanar_detalle()">
+                        Mas informacion <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <span class="info-box-icon bg-info elevation-1">
+                        <i class="fas fa-cog"></i>
+                    </span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Configuraciones</span>
+                        <span class="info-box-number" id="total_configuracion">30<small>%</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <span class="info-box-icon bg-danger elevation-1">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Errores</span>
+                        <span class="info-box-number" id="total_errores">10<small>%</small></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <span class="info-box-icon bg-success elevation-1">
+                        <i class="fas fa-user-plus"></i>
+                    </span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Registros Nuevos</span>
+                        <span class="info-box-number" id="total_usuarios">22<small>%</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="grafica1" width="400" height="400"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="grafica2" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script  src="app/controllers/dashboard.js"></script>

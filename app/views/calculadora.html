@@ -1,0 +1,58 @@
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h2 class="card-title">
+                            <i class="fas fa-calculator"></i>
+                            Calculadora
+                        </h2>       
+                    </div>
+                    <div class="card-body">
+                        <form name="frm" id="frm" onsubmit="return false;" autocomplete="off">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Primer Digito</label>
+                                        <input type="number" class="form-control" id="primer_numero" placeholder="Digite el numero uno">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Sugundo Digito</label>
+                                        <input type="number" class="form-control" id="segundo_numero" placeholder="Digite el numero dos">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Operacion</label>
+                                        <select class="form-control" id="tipo_operacion">
+                                          <option value="1">Suma</option>
+                                          <option value="2">Resta</option>
+                                          <option value="3">Multiplicacion</option>
+                                          <option value="4">Division</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" 
+                                    class="btn btn-outline-primary btn-block mt-4" id="btn_operacion">
+                                    Operar</button>
+                                </div>
+                            </div>
+                          </form>
+                          <div class="alert alert-primary" role="alert" id="respuesta" 
+                          style="display:none;">
+                            
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="app/controllers/calculadora.js"></script>
